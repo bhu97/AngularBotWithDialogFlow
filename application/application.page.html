@@ -1,0 +1,77 @@
+<ion-content>
+  <div class="header">
+    <h1>Farmers Application</h1>
+    <p>Please click on the chatbot virtual agent for any help</p>
+  </div>
+  <div class="navbar">
+    <a href="\application" class="active">Home</a>
+    <a href="\contact">Contact us</a>
+    <a href="\explore">Info</a>
+    <a href="\profile" class="right">Profile</a>
+  </div>
+  <div class="row">
+    <div class="column">
+  <img src="/assets/images/fertilizer.png" alt="fertilizer" style="width:100%">
+</div>
+<div class="column">
+    <img src="/assets/images/fertilizer2.jpg" alt="fertilizer" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/assets/images/fertilizer3.jpg" alt="fertilizer" style="width:100%">
+  </div>
+</div>
+  <h4 class="ex1"><strong>Fertilizer, natural or artificial substance containing the chemical elements that improve growth and productiveness of plants. Fertilizers enhance the natural fertility of the soil or replace the chemical elements taken from the soil by previous crops.</strong></h4>
+  <div class="row">
+    <div class="column">
+  <img src="/assets/images/plant1.jpg" alt="fertilizer" style="width:100%">
+</div>
+<div class="column">
+  <img src="/assets/images/plant2.jpg" alt="fertilizer" style="width:100%">
+</div>
+<div class="column">
+  <img src="/assets/images/plant3.jpg" alt="fertilizer" style="width:100%">
+</div>
+</div>
+<h4 class="ex1"><strong>A crop is a plant or animal product that can be grown and harvested extensively for profit or subsistence. Crops may refer either to the harvested parts or to the harvest in a more refined state. Most crops are cultivated in agriculture or aquaculture. A crop may include macroscopic fungus, or macroscopic marine alga.</strong></h4>
+
+
+<img id="myImg" src="/assets/images/earthworm.jpg" alt="Snow" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<img id="myImg" src="/assets/images/material.jpg" alt="material" style="width:100%;max-width:300px">
+<h4 class="ex1"><strong>Natural fertilizers are organic products that have been extracted from living things or from the earth. They can be either plant-derived or animal-derived. Some examples would be mushroom manure, blood meal, bone meal, cottonseed meal, kelp meal, poultry or horse manure (aged) and compost.</strong></h4>
+<div class="footer">
+  <h2>You may contact us at +21-09090909</h2>
+  <h3>You may also email us at help@farmerbot.in for any inquires</h3>
+</div>
+
+<script>
+
+  // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+</ion-content>

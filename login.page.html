@@ -1,0 +1,31 @@
+<ion-header>
+
+  <ion-toolbar>
+
+    <ion-title>login</ion-title>
+
+  </ion-toolbar>
+
+</ion-header>
+
+  <ion-content>
+
+    <ion-item>
+
+    <ion-label position="floating">Enter registered e-mail address</ion-label>
+
+    <ion-input></ion-input></ion-item><br>
+
+    <ion-item>
+
+      <ion-label position="floating">Enter password</ion-label>
+
+      <ion-input type="password"></ion-input></ion-item><br>
+
+      <ion-button (click)="nextpage()" color="secondary">Login</ion-button><br>
+
+      <ion-label position="floating">Not a registered user?</ion-label><br>
+
+      <ion-button (click)="reg()" color="primary">Register</ion-button>
+
+  </ion-content>

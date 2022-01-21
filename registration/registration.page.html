@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>registration</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Enter full name</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item><br>
+  <ion-item>
+    <ion-label position="floating">Enter e-mail address</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item><br>
+  <ion-item>
+    <ion-label position="floating">Enter phone number</ion-label>
+    <ion-input type="number"></ion-input>
+  </ion-item><br>
+  <ion-item>
+    <ion-label position="floating">Create a password</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item><br>
+  <ion-button (click)="logon()" color="secondary">Register</ion-button><br>
+  <ion-button (click)="password()" color="secondary">Forgot password</ion-button><br>
+</ion-content>
